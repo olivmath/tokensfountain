@@ -18,6 +18,7 @@ contract BaseSetup is Utils {
         owner = payable(users[0]);
         user = payable(users[1]);
 
+        vm.prank(owner);
         tf = new TokensFountain();
     }
 }
